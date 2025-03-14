@@ -1,4 +1,4 @@
-use config_store::ConfigStore;
+use easy_config_store::ConfigStore;
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Default, PartialEq, Serialize, Deserialize, Clone)]

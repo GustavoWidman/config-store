@@ -90,24 +90,24 @@ dependencies = [
 ]
 
 [[package]]
-name = "config-store"
-version = "0.1.1"
+name = "crunchy"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "43da5946c66ffcc7745f48db692ffbb10a83bfe0afd96235c5c2a4fb23994929"
+
+[[package]]
+name = "easy-config-store"
+version = "0.1.0"
 dependencies = [
  "anyhow",
  "ciborium",
- "config-store",
+ "easy-config-store",
  "serde",
  "serde_json",
  "serde_yaml",
  "tokio",
  "toml",
 ]
-
-[[package]]
-name = "crunchy"
-version = "0.2.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "43da5946c66ffcc7745f48db692ffbb10a83bfe0afd96235c5c2a4fb23994929"
 
 [[package]]
 name = "equivalent"
@@ -158,7 +158,7 @@ name = "json-async"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "config-store",
+ "easy-config-store",
  "serde",
  "tokio",
 ]
@@ -168,7 +168,7 @@ name = "json-std"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "config-store",
+ "easy-config-store",
  "serde",
 ]
 
@@ -433,7 +433,7 @@ name = "toml-async"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "config-store",
+ "easy-config-store",
  "serde",
  "tokio",
 ]
@@ -443,7 +443,7 @@ name = "toml-std"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "config-store",
+ "easy-config-store",
  "serde",
 ]
 
@@ -574,7 +574,7 @@ name = "yaml-async"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "config-store",
+ "easy-config-store",
  "serde",
  "tokio",
 ]
@@ -584,6 +584,6 @@ name = "yaml-std"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "config-store",
+ "easy-config-store",
  "serde",
 ]

@@ -1,7 +1,12 @@
 [package]
-name = "config-store"
-version = "0.1.1"
+name = "easy-config-store"
+version = "0.1.0"
 edition = "2024"
+authors = ["Gustavo Widman <admin@r3dlust.com>"]
+license = "MIT"
+description = "A simple, flexible configuration management library for Rust that supports multiple serialization formats and both synchronous and asynchronous operations."
+repository = "https://github.com/GustavoWidman/easy-config-store"
+homepage = "https://github.com/GustavoWidman/easy-config-store"
 
 [workspace]
 members = ["examples/*"]
@@ -24,7 +29,7 @@ yaml = ["dep:serde_yaml"]
 
 [dev-dependencies]
 tokio = { version = "1.44.1", features = ["full"] }
-config-store = { path = ".", default-features = false, features = [
+easy-config-store = { path = ".", default-features = false, features = [
 	"toml",
 	"tokio",
 ] }

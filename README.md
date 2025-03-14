@@ -1,4 +1,4 @@
-# config-store
+# easy-config-store
 
 A simple, flexible configuration management library for Rust that supports multiple serialization formats and both synchronous and asynchronous operations.
 
@@ -18,7 +18,7 @@ Add to your Cargo.toml:
 
 ```toml
 [dependencies]
-config-store = { version = "0.1.0", features = ["json"] }
+easy-config-store = { version = "0.1.0", features = ["json"] }
 ```
 
 Choose features based on your needs:
@@ -33,7 +33,7 @@ Choose features based on your needs:
 ### Basic example
 
 ```rust
-use config_store::ConfigStore;
+use easy_config_store::ConfigStore;
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Default, PartialEq, Serialize, Deserialize, Clone)]
@@ -63,7 +63,7 @@ fn main() -> anyhow::Result<()> {
 ### Async example with Tokio
 
 ```rust
-use config_store::ConfigStore;
+use easy_config_store::ConfigStore;
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Default, PartialEq, Serialize, Deserialize, Clone)]

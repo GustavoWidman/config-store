@@ -5,7 +5,7 @@ edition = "2024"
 
 [dependencies]
 anyhow = "1.0.97"
-config-store = { path = "../..", default-features = false, features = [
+easy-config-store = { path = "../..", default-features = false, features = [
 	"json",
 	"tokio",
 ] }
