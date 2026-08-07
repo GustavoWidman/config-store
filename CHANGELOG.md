@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.1](https://github.com/GustavoWidman/easy-config-store/compare/v0.3.0...v0.3.1) - 2026-08-07
+
+### Fixed
+
+- *(config)* avoid expression-position bail macros
+
+### Other
+
+- *(easy-config-store)* release v0.3.0
+
 ## [0.3.0](https://github.com/GustavoWidman/easy-config-store/compare/v0.2.2...v0.3.0) - 2026-06-07
 
 ### Added
