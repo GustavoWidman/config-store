@@ -1,4 +1,4 @@
-use eyre::{Result, bail};
+use eyre::{Result, eyre};
 
 // Use TOML if the toml feature is enabled
 #[cfg(feature = "toml")]
@@ -34,11 +34,11 @@ fn merge_values_at(config: &mut Value, other: Value, path: &str) -> Result<()> {
             Ok(())
         }
         (config, other) if *config == other => Ok(()),
-        (config, other) => bail!(
+        (config, other) => Err(eyre!(
             "conflicting config value at {path}: existing {} differs from incoming {}",
             value_kind(config),
             value_kind(&other)
-        ),
+        )),
     }
 }
 
@@ -88,11 +88,11 @@ fn merge_values_at(config: &mut Value, other: Value, path: &str) -> Result<()> {
             Ok(())
         }
         (config, other) if *config == other => Ok(()),
-        (config, other) => bail!(
+        (config, other) => Err(eyre!(
             "conflicting config value at {path}: existing {} differs from incoming {}",
             value_kind(config),
             value_kind(&other)
-        ),
+        )),
     }
 }
 
@@ -142,11 +142,11 @@ fn merge_values_at(config: &mut Value, other: Value, path: &str) -> Result<()> {
             Ok(())
         }
         (config, other) if *config == other => Ok(()),
-        (config, other) => bail!(
+        (config, other) => Err(eyre!(
             "conflicting config value at {path}: existing {} differs from incoming {}",
             value_kind(config),
             value_kind(&other)
-        ),
+        )),
     }
 }
 
